@@ -1,0 +1,128 @@
+name: bulkhub
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  auth_buttons: any
+  badges: ^2.0.2
+  stream_transform: ^2.0.0
+  # chat message ui design
+  cached_network_image: ^3.2.0
+  chat_bubbles: ^1.2.0
+  cupertino_icons: ^1.0.2
+  carousel_slider: ^4.0.0
+  # network connectivity checker
+  connectivity_plus: ^2.3.0
+  country_code_picker: ^2.0.2
+  custom_pop_up_menu: ^1.2.3+1
+  # functional programming thingies
+  dartz: ^0.10.1
+  dots_indicator: ^2.1.0
+  # value equality
+  equatable: ^2.0.3
+  # for state management
+  flutter_bloc: ^8.0.1
+  flutter_html: ^3.0.0-alpha.3
+
+  flutter_rating_bar: ^4.0.0
+  flutter_svg: ^1.0.3
+  # service locator
+  get_it: ^7.2.0
+  google_fonts: ^4.0.4
+  grouped_list: ^4.2.0
+  # remote api call
+  http: ^0.13.4
+  # image picker from device
+  image_picker: ^0.8.5
+  intl: ^0.17.0
+  pinput: ^2.2.7
+  # local storage
+  shared_preferences: ^2.0.13
+  flutter_slidable: ^1.3.0
+  sliding_up_panel: ^2.0.0+1
+  sliver_tools: ^0.2.5
+  # datetime to time ago
+  timeago: ^3.2.2
+  toggle_switch: ^2.0.1
+  webview_flutter: ^3.0.4
+  # payment
+  # flutter_stripe: ^3.2.0
+  flutter_font_awesome_web_names:
+    git:
+      url: https://github.com/Mythar/flutter_font_awesome_web_names
+      ref: master
+  modal_bottom_sheet: ^2.0.1
+  flutter_credit_card: ^3.0.1
+
+dependency_overrides:
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/danReynolds/modal_bottom_sheet.git
+      path: modal_bottom_sheet
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # for to test
+  mocktail: ^0.3.0
+
+
+  flutter_lints: ^1.0.0
+  rename: ^2.0.1
+  flutter_native_splash: any
+  flutter_launcher_icons: any
+
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/stripe/
+
+
+  fonts:
+    - family: FontAwesomeBrands
+      fonts:
+        - asset: assets/fonts/fa-brands-400.ttf
+          weight: 400
+    - family: FontAwesomeRegular
+      fonts:
+        - asset: assets/fonts/fa-regular-400.ttf
+          weight: 400
+    - family: FontAwesomeSolid
+      fonts:
+        - asset: assets/fonts/fa-solid-900.ttf
+          weight: 900

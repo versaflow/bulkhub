@@ -1,0 +1,1 @@
+{"message":"The given data was invalid.","errors":{"agree":["Consent filed is required"],"email":["Email is required"],"password":["Password is required"]}}
